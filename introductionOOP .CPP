@@ -1,24 +1,28 @@
 #include <iostream>
 using namespace std;
 
-class mahasiswa{ //blue print atau cetakan
-    public: 
-int nim;
-string nama;
-float nilai;
+class Mahasiswa{ //blue print atau cetakan
+public :
+    int nim;
+    string nama;
+    float nilai;
 
-void printData(){
-    cout << "NIM : " << nim << endl;
-    cout << "Nama : " << nama << endl;
-    cout << "Nilai : " << nilai << endl;
-}
+    void printData(){
+        cout << "NIM : " << nim << endl;
+        cout << "Nama : " << nama << endl;
+        cout << "Nilai : " << nilai << endl;
+    }
 }; //batas class
 
 int main(){
-    mahasiswa mhs;//object
-    mhs.nim = 2022;
-    mhs.nama = "Abrar";
-    mhs.nilai = 90.5;
+    Mahasiswa mhs; //object
 
+    mhs.nim = 2022;
+    mhs.nama = "Jimmy";
+    mhs.nilai = 90;
+
+    mhs.printData();
+
+    return 0;
     mhs.printData();
 }
